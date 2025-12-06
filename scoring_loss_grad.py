@@ -13,10 +13,10 @@ import argparse
 import logging
 import os
 from models import DiT_models
-from any_diffusion.algorithms.transport import create_transport
+from transport import create_transport
 from torch.autograd import grad
 from download import find_model
-from retraindit_vaeretrained import get_dataset
+from train import get_dataset
 
 
 def make_x0_bank(M, x, seed=2025):
