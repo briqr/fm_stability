@@ -2,17 +2,16 @@ import torch
 import torch.nn.functional as F
 from PIL import Image
 import torch
-
 import os
-
 from sklearn.metrics.pairwise import cosine_similarity
 import cv2
-
-
-
 import onnxruntime as ort
 import numpy as np
 import cv2
+import argparse
+from tqdm import tqdm
+
+
 
 def load_arcface_model(model_dir):
     model_path = f"{model_dir}/glintr100.onnx"
@@ -32,15 +31,6 @@ def get_arcface_embedding(session, input_name, img):
     emb = session.run(None, {input_name: img})[0]
     emb = emb / np.linalg.norm(emb)
     return emb
-
-
-import birder
-from birder.inference.classification import infer_image
-import os
-import argparse
-from torchvision.transforms.functional import to_pil_image
-from tqdm import tqdm
-import numpy as np
 
 
 def build_path(epoch, ckpt, results_dir):
