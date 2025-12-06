@@ -36,7 +36,7 @@ from torchvision.utils import save_image
 import datasets
 from datasets.transforms import build_transforms
 from datasets import build_dataset, force_flip_then
-from retrain_cluster import furthestmid_cluster, equal_cluster, mid_cluster, random_cluster, drop_clusters
+from pruning_cluster import equal_cluster, random_cluster, drop_clusters
 from transport import create_transport
 import logging
 from train_consts import *
