@@ -13,8 +13,6 @@ diffusers
 torchdiffeq
 einops
 deepspeed
-wandb
-flash-attn
 omegaconf
 matplotlib
 beartype
