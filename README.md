@@ -1,6 +1,4 @@
 # The Amazing Stability of Flow Matching
-Source code for the paper [The Amazing Stability of Flow Matching](https://openreview.net/forum?id=K6ptzIhoKy). 
-
 The autoencoder package is taken from [flex_gen framework](https://github.com/HelmholtzAI-FZJ/flex_gen).
 
 To run the training script, please adjust train_script.sbatch
