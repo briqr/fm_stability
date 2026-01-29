@@ -45,6 +45,7 @@ def main(args):
     inputs = processor(images=data, return_tensors="pt", do_rescale=True).to(device)
     with torch.no_grad():
         final_img_features = model.get_image_features(**inputs)
+        final_img_features = F.normalize(final_img_features, p=2, dim=-1)
     torch.save(final_img_features, os.path.join(save_path, '%s_clip_features.pth')%dataset_name)
     print('***len of saved image feat shape', len(final_img_features) )
     print('*************************')              
