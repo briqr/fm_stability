@@ -1,19 +1,1 @@
-# The Amazing Stability of Flow Matching
-The autoencoder package is taken from [flex_gen framework](https://github.com/HelmholtzAI-FZJ/flex_gen).
-
-To run the training script, please adjust train_script.sbatch
-
-To evaluate fid, please adjust evaluate_fid.sbatch
-
-
-Clustered features and models can be downloaded [here](https://drive.google.com/drive/folders/1Jr2gQsMxudmcTMmCTFaCXqoNmUCTA9n7?usp=sharing) 
-
-Source code has been taken and adapted from additional frameworks:
-
-[DiT](https://github.com/facebookresearch/DiT)
-
-[SiT](https://github.com/willisma/SiT)
-
-[torch-kmeans](https://github.com/jokofa/torch_kmeans)
-
 
