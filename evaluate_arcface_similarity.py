@@ -69,7 +69,7 @@ def arcface_features_from_samples(images, session, input_name, save_path, n=4096
 
 def arcface_similarity(images1, images2, cache_path1, cache_path2, device="cuda", n=4096):
 
-    model_dir = "/p/project1/briq/cache/.insightface/models/antelopev2"
+    model_dir = "/p/project1/cache/.insightface/models/antelopev2"
     arcface_sess, arcface_input = load_arcface_model(model_dir)
 
     embs1 = arcface_features_from_samples(images1, arcface_sess, arcface_input, cache_path1, n)
