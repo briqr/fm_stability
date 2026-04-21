@@ -6,7 +6,7 @@ from PIL import Image
 from torch.utils.data import Dataset, DataLoader
 from typing import Optional, List
 
-FFHQ_DATAROOT = '/p/scratch/generativeaims/briq/dataset/ffhq'
+FFHQ_DATAROOT = '/scratch/dataset/ffhq'
 
 def _stable_sorted_paths(data_dir: str, exts=(".png",)) -> List[str]:
     paths = []
